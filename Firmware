@@ -1,1 +1,7 @@
-
+#define WIFI_SSID      "Wokwi-GUEST"
+#define WIFI_PASSWORD  ""
+#define MQTT_SERVER    ".gitignore"
+#define MQTT_USER      ".gitignore"
+#define MQTT_PASS      ".gitignore"
+#define MQTT_PORT      .gitignore
+#define DEVICE_ID      "gestacao_device_01"
