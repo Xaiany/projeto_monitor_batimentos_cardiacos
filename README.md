@@ -1,5 +1,3 @@
-# projeto_monitor_batimentos_cardiacos
-
 # Monitoramento da Saúde Materna com IoT
 
 Este repositório contém o projeto **“Monitoramento da Saúde Materna com IoT”**, desenvolvido na disciplina de Internet das Coisas (IoT) da Universidade Presbiteriana Mackenzie.
