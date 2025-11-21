@@ -78,3 +78,17 @@ Propor um dispositivo IoT capaz de:
    - O display OLED mostra todos os valores atuais e o status.
 5. O ESP32 publica um **JSON** em um tópico MQTT no HiveMQ Cloud.
 6. O **Node-RED** assina o tópico, recebe os dados em tempo real e pode encaminhá-los para banco, dashboards, e-mail ou SMS.
+
+## Código-fonte (Software Desenvolvido)
+
+O firmware completo utilizado no ESP32 está disponível na pasta:
+
+👉 [`/firmware`](./firmware)
+
+O código está comentado e organizado para facilitar a compreensão de cada etapa do funcionamento do sistema, incluindo:
+- Configuração de Wi-Fi e MQTT com TLS;
+- Leitura de sensores;
+- Cálculo do status (NORMAL, ATENÇÃO, CRÍTICO);
+- Controle de LEDs, buzzer e display OLED;
+- Publicação MQTT com JSON;
+- Reconexão automática com o broker.
