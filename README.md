@@ -8,6 +8,29 @@ O sistema utiliza um ESP32, sensores, atuadores e o protocolo MQTT para monitora
 
 ---
 
+## 🩺 Breve Descrição do Funcionamento e Uso
+
+Este projeto apresenta um **sistema IoT para monitoramento da saúde materna**, desenvolvido com ESP32, DHT22, potenciômetro, display OLED, LEDs e buzzer.  
+Ele coleta temperatura, umidade e um sinal analógico que simula batimentos cardíacos, classificando automaticamente a situação da gestante em **NORMAL**, **ATENÇÃO** ou **CRÍTICO**.
+
+Tudo é atualizado em tempo real no display OLED, LEDs e buzzer, e as informações são enviadas via **MQTT** para um broker na nuvem (HiveMQ Cloud). No lado do assinante, o **Node-RED** recebe, exibe e processa as mensagens publicadas pelo dispositivo.
+
+Com esse repositório, qualquer pessoa pode:
+
+1. **Reproduzir a montagem** usando o Wokwi ou hardware real.  
+2. **Compilar e enviar o firmware** completo para um ESP32.  
+3. **Conectar o dispositivo à internet** via Wi-Fi.
+4. **Transmitir telemetria MQTT** para o HiveMQ Cloud com conexão TLS.
+5. **Assinar os dados no Node-RED**, construindo dashboards, alarmes e notificações.  
+
+O projeto demonstra um fluxo completo de IoT aplicado à área da saúde:
+- Leitura de sensores ✔️  
+- Processamento de dados ✔️  
+- Interface local (OLED, LEDs e buzzer) ✔️  
+- Comunicação via internet (TCP/IP) ✔️  
+- Protocolo MQTT seguro (TLS + autenticação) ✔️  
+- Assinatura e tratamento no Node-RED ✔️  
+
 ## Objetivo do projeto
 
 Propor um dispositivo IoT capaz de:
