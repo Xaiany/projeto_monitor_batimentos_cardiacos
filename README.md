@@ -55,20 +55,3 @@ Propor um dispositivo IoT capaz de:
    - O display OLED mostra todos os valores atuais e o status.
 5. O ESP32 publica um **JSON** em um tópico MQTT no HiveMQ Cloud.
 6. O **Node-RED** assina o tópico, recebe os dados em tempo real e pode encaminhá-los para banco, dashboards, e-mail ou SMS.
-
----
-
-## Estrutura do repositório
-
-```text
-.
-├─ README.md                 # Visão geral e instruções de uso
-├─ firmware/
-│  └─ monitoramento_saude_materna.ino   # Código do ESP32
-├─ docs/
-│  ├─ hardware.md            # Descrição detalhada de hardware
-│  ├─ software.md            # Descrição do firmware e lógica
-│  ├─ comunicacao.md         # MQTT, tópicos e payload JSON
-│  └─ testes.md              # Critérios e cenários de teste
-└─ img/
-   └─ ...                    # Prints do Wokwi, HiveMQ e Node-RED
